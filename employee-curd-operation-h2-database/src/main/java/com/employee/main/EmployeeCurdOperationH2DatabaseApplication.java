@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.employee.repository.EmployeeRepository;
 
-@SpringBootApplication(scanBasePackages = {"com.employee.*","com.employee.service.impl","com.employee.service","com.employee.repository","com.employee.controller"})
+@SpringBootApplication(scanBasePackages = {"com.employee.*"})
 @EnableJpaRepositories(basePackageClasses = {EmployeeRepository.class})
 @EntityScan("com.employee.entity")
 public class EmployeeCurdOperationH2DatabaseApplication {
